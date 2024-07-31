@@ -1,10 +1,13 @@
 # TheTaiChiClub
+reminder: keep in simple! This page will be locally used by the students who attend our clients Taichi classes and to provide resources for those who want to get in to Taichi!
+
+LOGO: when clicked should take you to home page
 
 NAVIGATION BAR
-1. Home
-2. About
-3. Merch
-4. Blog page (will rename)
+1. Home : take you to home
+2. About: Take you to about page
+3. Information : take you to services page
+4. Blog page (will rename) :  
 
  MAIN PAGE: General Introduction
    GOAL:
@@ -33,7 +36,8 @@ SERVICES PAGE
     (side info) This is my dad's Taichi youtube channel: https://www.youtube.com/@WushuandKungFu
    
     PUBLISH THESE: Links to the demo videos can be found on the word press demo page: https://thetaichiclub1.wordpress.com/2024/06/01/growth-unlocked/
-4. Forms of Taichi: Yang, etc
+4. Forms of Taichi: 24 Movement and more
+   this is just to provide information to users about different styles and the style they will be focusing on
 
 FOOTER
 1. Contact information
