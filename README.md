@@ -11,9 +11,8 @@ NAVIGATION BAR
 
  MAIN PAGE: General Introduction
    GOAL:
-     1. pic of Jie Gu (our client)
-     
-     2. Take you to the about page: article about client
+   1. pic of Jie Gu (our client)
+   2.  2. Take you to the about page: article about client
      
 SERVICES PAGE
 1. Class schedule
