@@ -39,6 +39,7 @@ SERVICES PAGE
 
    b. PUBLISH THESE: Links to the demo videos can be found on the word press demo page: https://thetaichiclub1.wordpress.com/2024/06/01/growth-unlocked/
 4. Forms of Taichi: 24 Movement and more
+   
      a. this is just to provide information to users about different styles and the style they will be focusing on
 
      b. provide videos of masters of taichi practicing 24 Movement
