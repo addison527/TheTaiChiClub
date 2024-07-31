@@ -46,3 +46,4 @@ SERVICES PAGE
 
 FOOTER
 1. Contact information
+2. copyright
