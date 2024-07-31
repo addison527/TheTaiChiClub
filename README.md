@@ -33,12 +33,15 @@ SERVICES PAGE
     
     Dec (12/04/2024 and 12/11/2024)
 2. Demonstration & Follow Along Videos
-    (side info) This is my dad's Taichi youtube channel: https://www.youtube.com/@WushuandKungFu
+
+   a. (side info) This is my dad's Taichi youtube channel: https://www.youtube.com/@WushuandKungFu
    
-    PUBLISH THESE: Links to the demo videos can be found on the word press demo page: https://thetaichiclub1.wordpress.com/2024/06/01/growth-unlocked/
+
+   b. PUBLISH THESE: Links to the demo videos can be found on the word press demo page: https://thetaichiclub1.wordpress.com/2024/06/01/growth-unlocked/
 4. Forms of Taichi: 24 Movement and more
-     this is just to provide information to users about different styles and the style they will be focusing on
-     provide videos of masters of taichi practicing 24 Movement
+     a. this is just to provide information to users about different styles and the style they will be focusing on
+
+     b. provide videos of masters of taichi practicing 24 Movement
 
 FOOTER
 1. Contact information
