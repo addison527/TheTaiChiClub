@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #96e2b8; /* light blue background for nature feel */
+    background-color: #779679; /* light blue background for nature feel */
 }
 
 .navbar {
@@ -95,7 +95,7 @@ body {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #4caf50; /* green */
+    background: #3b7849; /* green */
     color: #fff;
 }
 
@@ -207,7 +207,7 @@ body {
 
 /*Main page section*/
 .main {
-    background-color: #96e2b8; /* light green */
+    background-color: #779679; /* light green */
 }
 
 .main__container {
@@ -217,7 +217,7 @@ body {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #a7c09d;
+    background-color: #779679;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -226,8 +226,8 @@ body {
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #a7c09d;
-    background-image: linear-gradient(to top, #004d11 0%, #046257 100%);
+    background-color: #7ac59f;
+    background-image: linear-gradient(to top, #05372e 0%, #05372e 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -237,8 +237,8 @@ body {
 
 .main__content h2 {
     font-size: 2rem;
-    background-color: #a7c09d;
-    background-image: linear-gradient(to top, #004d11 0%, #007916 100%);
+    background-color: #81c784;
+    background-image: linear-gradient(to top, #034136 0%, #034136 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -255,7 +255,7 @@ body {
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #004d11 0%, #007916 100%);
+    background-image: linear-gradient(to top, #3b7849 0%, #3b7849 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -281,7 +281,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #046257; /* darker green */
+    background: #034136; /* darker green */
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -367,7 +367,7 @@ body {
 
 .services h1 {
     background-color: #41ab72; /* green */
-    background-image: linear-gradient(to right, #32735b 0%, #32735b 100%);
+    background-image: linear-gradient(to right, #004d40 0%, #004d40 100%);
     background-size: 100%;
     margin-bottom: 5rem;
     margin-top: 3rem;
@@ -424,7 +424,7 @@ body {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #005f11; /* green */
+    background: #388e3c; /* green */
     position: absolute;
     top: 440px;
     left: 30px;
@@ -559,4 +559,43 @@ body {
     align-items: center;
     margin-bottom: 16px;
 }
+
+/* Demo page styles */
+.main h1 {
+    font-size: 2rem;
+    background-image: linear-gradient(to top, #05372e 0%, #05372e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.main__container_demo p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #004d40;
+}
+.main__container_demo h3 {
+    margin-top: 5px;
+    /* font-size: 1.2rem;
+    font-weight: 400; */
+    color: #073029;
+}
+
+.main__container_demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
 
