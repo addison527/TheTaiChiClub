@@ -40,6 +40,11 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+    transition: all 0.2s linear;
+  }
+
+  .cards__item__link:hover {
+    transform: scale(1.05);
   }
   
   .cards__item__pic-wrap {
@@ -80,11 +85,6 @@
     max-height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    transition: all 0.2s linear;
-  }
-  
-  .cards__item__img:hover {
-    transform: scale(1.1);
   }
   
   .cards__item__info {
@@ -114,3 +114,4 @@
       margin-bottom: 2rem;
     }
   }
+
