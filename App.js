@@ -8,8 +8,8 @@ import About from './components/pages/About';
 import ClassSchedule from './components/pages/ClassSchedule';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
-// import Demos from './components/pages/Demos';
-// import FollowAlong from './components/pages/FollowAlong';
+import Demonstration from './components/pages/Demos';
+import FollowAlong from './components/pages/FollowAlong';
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/class-schedule" element={<ClassSchedule />} />
-            {/* <Route path="/demonstrations" element={<Demos />} />
-            <Route path="/follow-along" element={<FollowAlong />} /> */}
+            <Route path="/demonstrations" element={<Demonstration />} />
+            <Route path="/follow-along" element={<FollowAlong />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         <Footer/>
