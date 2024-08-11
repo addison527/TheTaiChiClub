@@ -9,7 +9,7 @@ import image5 from './images/IMG_0738.jpg';
 
 function Cards() {
   return (
-    <div className='cards' style ={{padding: "4rem", backgroundColor: "#FBF2ED"}}>
+    <div className='cards' style ={{padding: "4rem", backgroundColor: "#ebeff3"}}>
       <h1>Information</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -17,13 +17,11 @@ function Cards() {
             <CardItem
               src={image1}
               text='Class Schedule at the EBR Parish Main Library'
-              label='See more'
               path='/class-schedule'
             />
             <CardItem
               src={image2}
               text='Follow Along Videos for Practice'
-              label='Start practicing!'
               path='/follow-along'
             />
           </ul>
@@ -31,13 +29,11 @@ function Cards() {
             <CardItem
               src={image3}
               text='Demonstration of 24 Taichi Movement'
-              label='See more'
               path='/demonstrations'
             />
             <CardItem
               src={image4}
               text='Philosophy of TaiChi'
-              label='Learn more'
               path='/about'
             />
             <CardItem
