@@ -6,11 +6,11 @@ import FullScreen from './FullScreen';
 
 function HeroSection() {
   return (
-    <FullScreen justifyContent="center" alignItems="center" backgroundColor="#b6c2dc">
-        <VStack>
-          <Box>
-            <h1>The Tai Chi Club</h1>
-            <h3>Baton Rouge, Louisiana</h3>
+    <FullScreen justifyContent="center" display= "flex" alignContent = "center" alignItems="center" backgroundColor="#CED5DF">
+        <VStack direction = "column" align = "center" justifyContent="center" margin = "0" padding = "0">
+          <Box >
+            <h1>The Tai Chi Club</h1> 
+            <h3></h3>
           </Box>
           <Button>
             About
@@ -21,17 +21,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
-{/* <div className='main-container'>
-       <img src='/images/IMG_5794.JPG' /> 
-      <h1>.</h1>
-      <p>--</p>
-      <div className='main-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        > About
-        </Button>
-      </div>
-    /div> */}
