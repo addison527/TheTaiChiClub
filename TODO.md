@@ -1,4 +1,4 @@
-NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY)
+NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY) (addison & vicky)
 1. IN MOBILE: when hovering over anywhere but the submenu (info and about submenus), the submenu should close
     WORD CLARITY: menu = home, about, info, contact
                 submenu = 'About' drop down menu with about merch philosophy
@@ -18,28 +18,28 @@ HEROSECTION (addison)
 1. clean it
 2. insert picture for the hero section
 
-CARDS PAGE (inside the home page)
+CARDS PAGE (addison & vicky) | located inside the home page
 1. when clicking on any of the cards, it should take you to the top of the linked page. currently it takes us to the middle/bottom.
 
-DEMO + FOLLOW ALONG PAGE (addison and vicky)
+DEMO + FOLLOW ALONG PAGE (Vicky)
 1. fix mobile view (doesnt wrap to fit the screen) and make dynamic sizing for mobile and smaller applications like ipad
 2. link the videos + their descriptions
 3. make a small <p> text box at the top to explain what the page it
 
-CONTACT PAGE
+CONTACT PAGE (addison)
 1. make mobile friendly (currently: no space between the box and navbar: make a white space)
 
-PHILOSOPHY PAGE
+PHILOSOPHY PAGE (addison)
 1. make mobile friendly: header cannot be seen in mobile
 
-MERCH PAGE
+MERCH PAGE (addison)
 1. in MOBILE have margin/padding at the top so there is white space between the yin and yang box and navbar
 
 ALL (addison and vicky)
 1. make sure all the pages CAN BE ACCESSIBLE IN MOBILE!!
     CHECK THIS AFTER COMPLETING ALL PAGES
 2. and when the content is short, make sure footer can be seen
-
+-------------
 PUBLISHING 
 1. publish website using git (possible sizing issue)
 
