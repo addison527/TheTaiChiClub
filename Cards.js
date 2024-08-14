@@ -10,10 +10,10 @@ import image6 from './images/IMG_0738.jpg';
 
 function Cards() {
   return (
-    <div className='cards' style ={{padding: "2rem", backgroundColor: "#ebeff3"}}>
+    <div className='cards' style ={{padding: "2rem 1rem", backgroundColor: "#ebeff3"}}>
       <h1>Information</h1>
       <div className='cards__container'>
-        <div className='cards__wrapper'>
+        <div className='cards__wrapper' >
           <ul className='cards__items'>
             <CardItem
               src={image1}
@@ -22,12 +22,12 @@ function Cards() {
             />
             <CardItem
               src={image2}
-              text='Follow Along Videos for Practice'
+              text='Follow Along Videos Practice'
               path='/follow-along'
             />
             <CardItem
               src={image3}
-              text='Demonstration of 24 Taichi Movement'
+              text='Master Demonstration of 24 Taichi Movement'
               path='/demonstrations'
             />
           </ul>

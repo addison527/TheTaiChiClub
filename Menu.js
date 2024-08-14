@@ -1,4 +1,3 @@
-//info button submenu
 import Dropdown from './Dropdown';
 import React, {useState} from "react";    
 
@@ -32,13 +31,3 @@ const Menu = ({ items }) => {
 };
 
 export default Menu;
-
-
-// export default Menu;
-// {/* <a href="/#class-schedule" onClick={() => handleClick('class-schedule-section')} onMouseOver = {() => handleMouseOver('class-info')} 
-//                   onMouseOut = {handleMouseOut} style = {{color: hoveredLink === 'class-info'? "#0D3759": "#fff", textDecoration: "none"}}>Class Schedule</a> */}
-// {/* <a href="/#demos" onClick={() => handleClick('demos-section')}onMouseOver = {() => handleMouseOver('demo')} 
-//                   onMouseOut = {handleMouseOut} style = {{color: hoveredLink === 'demo'? "#0D3759": "#fff", textDecoration: "none"}}>Demonstrations</a>
-//               <a href="/#follow-along" onClick={() => handleClick('follow-along-section')}onMouseOver = {() => handleMouseOver('follow-along')} 
-//                   onMouseOut = {handleMouseOut} style = {{color: hoveredLink === 'follow-along'? "#0D3759": "#fff", textDecoration: "none"}}>Follow Along</a> */}
-             
