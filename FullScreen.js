@@ -1,13 +1,30 @@
 import * as React from "react";
 import { VStack } from "@chakra-ui/react";
 
-/**
- * Illustrates the use of children prop and spread operator
- */
-const FullScreen = ({ children, isDarkBackground, ...boxProps }) => {
+const FullScreen = ({ children, footerHeight, isDarkBackground, ...boxProps }) => {
+  const [viewportHeight, setViewportHeight] = React.useState(window.innerHeight);
+  const contentHeight = React.useRef(null);
+
+  React.useEffect(() => {
+    const handleResize = () => setViewportHeight(window.innerHeight);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  React.useEffect(() => {
+    if (contentHeight.current) {
+      const contentActualHeight = contentHeight.current.clientHeight;
+      if (contentActualHeight + footerHeight <= viewportHeight) {
+        contentHeight.current.style.minHeight = `calc(100vh - ${footerHeight}px)`;
+      } else {
+        contentHeight.current.style.minHeight = "100vh";
+      }
+    }
+  }, [viewportHeight, footerHeight]);
+
   return (
     <VStack backgroundColor={boxProps.backgroundColor} color={isDarkBackground ? "white" : "black"}>
-      <VStack maxWidth="1280px" minHeight="100vh" display = "flex" flexDirection ="column" {...boxProps}>
+      <VStack ref={contentHeight} maxWidth="1280px"  display = "flex" flexDirection ="column" {...boxProps}> {/*minHeight="100vh"*/}
         {children}
       </VStack>
     </VStack>
