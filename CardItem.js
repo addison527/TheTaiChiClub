@@ -6,13 +6,12 @@ function CardItem(props) {
     <>
       <li className='cards__item'>
         <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap'>
-            <img
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+           <img
               className='cards__item__img'
               alt='Taichi Image'
               src={props.src}
-            />
-          </figure>
+            /> </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
           </div>
@@ -21,34 +20,4 @@ function CardItem(props) {
     </>
   );
 }
-
  export default CardItem;
-// import Card from 'react-bootstrap/Card';
-
-// function CardItem() {
-//   return (
-//     <>
-//       <Card>
-//         <Card.Img variant="top" src="holder.js/100px180" />
-//         <Card.Body>
-//           <Card.Text>
-//             Some quick example text to build on the card title and make up the
-//             bulk of the card's content.
-//           </Card.Text>
-//         </Card.Body>
-//       </Card>
-//       <br />
-//       <Card>
-//         <Card.Body>
-//           <Card.Text>
-//             Some quick example text to build on the card title and make up the
-//             bulk of the card's content.
-//           </Card.Text>
-//         </Card.Body>
-//         <Card.Img variant="bottom" src="holder.js/100px180" />
-//       </Card>
-//     </>
-//   );
-// }
-
-// export default CardItem;
