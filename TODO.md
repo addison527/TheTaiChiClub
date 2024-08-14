@@ -31,7 +31,7 @@ DEMO + FOLLOW ALONG PAGE (addison and vicky)
 
 ALL (addison and vicky)
 1. make sure all the pages CAN BE ACCESSIBLE IN MOBILE!!
-2. and when the content is short, make sure footer can be seen
+2. and when the content is short, make sure footer can be seen: sometimes even if the content doesnt even take up a whole page, you still have to scroll to see the footer due to spacing issues. Solve by at the top of all the pages IF and ONLY IF the page uses <FullScreen> attribute , INSERT footerheight={80} at the FullScreen div <>
 
 PUBLISHING 
 1. make sure images transfer when live
