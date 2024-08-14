@@ -249,4 +249,3 @@ function Demonstration({ videoSrc1, videoSrc2, name1, description1, name2, descr
 }
 
 export default Demonstration;
-

@@ -141,4 +141,3 @@ function FollowAlong({ videoSrc1, videoSrc2, name1, description1, name2, descrip
 }
 
 export default FollowAlong;
-
