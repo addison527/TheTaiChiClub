@@ -5,18 +5,19 @@ import image1 from './images/MAN06766.jpg';
 import image2 from './images/IMG_5794.JPG';
 import image3 from './images/Test.webp';
 import image4 from './images/MAN00000.jpg';
-import image5 from './images/IMG_0738.jpg';
+import image5 from './images/IMG_5091.jpg';
+import image6 from './images/IMG_0738.jpg';
 
 function Cards() {
   return (
-    <div className='cards' style ={{padding: "4rem", backgroundColor: "#ebeff3"}}>
+    <div className='cards' style ={{padding: "2rem", backgroundColor: "#ebeff3"}}>
       <h1>Information</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src={image1}
-              text='Class Schedule at the EBR Parish Main Library'
+              text='Class Schedule at the EBRP Main Library'
               path='/class-schedule'
             />
             <CardItem
@@ -24,22 +25,26 @@ function Cards() {
               text='Follow Along Videos for Practice'
               path='/follow-along'
             />
-          </ul>
-          <ul className='cards__items'>
             <CardItem
               src={image3}
               text='Demonstration of 24 Taichi Movement'
               path='/demonstrations'
             />
-            <CardItem
+          </ul>
+          <ul className='cards__items'>
+          <CardItem
               src={image4}
               text='Philosophy of TaiChi'
-              path='/about'
+              path='/blogs'
             />
             <CardItem
               src={image5}
+              text='Merch'
+              path='/merch'
+            />
+            <CardItem
+              src={image6}
               text='Contact Information'
-              label='Connect'
               path='/contact'
             />
           </ul>
