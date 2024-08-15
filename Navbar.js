@@ -259,7 +259,6 @@
 //   );
 // };
 
-// export default Navbar;
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/CatLogoNoWords.png';
@@ -326,6 +325,9 @@ const Navbar = () => {
 
   const handleMouseOut = () => {
     setHoveredLink(null);
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
   };
 
   return (
@@ -371,14 +373,16 @@ const Navbar = () => {
                   }}
                   onClick={toggleMenu}
                   onMouseOver={() => handleMouseOver('button')}
-                  onMouseOut={() => handleMouseOut()}
-                 
-                > ☰
+                  onMouseOut={handleMouseOut}
+                >
+                  ☰
                 </button>
                 {isMenuOpen && (
                   <VStack
                     spacing={4}
                     alignItems="center"
+                    onMouseOver={() => setIsMenuOpen(true)}
+                    onMouseOut={handleMouseOut}
                     style={{
                       position: 'absolute',
                       top: '100%',
@@ -436,7 +440,8 @@ const Navbar = () => {
                                 padding: '8px 0',
                                 borderBottom: '1px solid #0D3759',
                               }}
-                            > {menu.title}
+                            >
+                              {menu.title}
                             </button>
                             {menu.submenu && (menu.title === 'About' ? isAboutMenuOpen : isInfoMenuOpen) && (
                               <VStack
@@ -479,7 +484,7 @@ const Navbar = () => {
                   </VStack>
                 )}
               </>
-            ) : ( //if on desktop, not mobile
+            ) : (
               <HStack spacing={20} style={{ fontSize: '18px', fontFamily: 'Times New Roman' }}>
                 <a
                   href="/"
@@ -627,3 +632,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
