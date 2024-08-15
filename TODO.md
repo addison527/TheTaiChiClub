@@ -1,7 +1,7 @@
 NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY)
-1. IN MOBILE: the submenus of the menu should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile. when hovering over anywhere but the submenu (info and about submenus), the submenu should close
+1. ~~IN MOBILE: the submenus of the menu should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile. when hovering over anywhere but the submenu (info and about submenus), the submenu should close~~
     
-2. Last time I had you remove the navbar if not hovering. We have to change this function so that when user click on the any of the menu options/submenu options of ☰ button it should close ONLY (not when mouse is no longer hovering) after redirecting you to the correct link. Currently the menu stays open. and should NOT dissapear when no longer hovering
+2. ~~Last time I had you remove the navbar if not hovering. We have to change this function so that when user click on the any of the menu options/submenu options of ☰ button it should close ONLY (not when mouse is no longer hovering) after redirecting you to the correct link. Currently the menu stays open. and should NOT dissapear when no longer hovering~~
 
 4. IN MOBILE when clicking on the submenu options, it should change to the dark blue. make an {onClick function}
 
@@ -15,7 +15,7 @@ HEROSECTION (addison)
 2. insert picture for the hero section
 
 CARDS PAGE (vicky) (inside the home page)
-1. when clicking on any of the cards, it should take you to the top of the linked page. currently it takes us to the middle/bottom.
+1. ~~when clicking on any of the cards, it should take you to the top of the linked page. currently it takes us to the middle/bottom.~~
 
 DEMO + FOLLOW ALONG PAGE (addison) **im linking all the videos right now and making it dynamic**
 1. fix mobile view (doesnt wrap to fit the screen) and make dynamic sizing for mobile and smaller applications like ipad
@@ -23,7 +23,7 @@ DEMO + FOLLOW ALONG PAGE (addison) **im linking all the videos right now and mak
 3. make a small <p> text box at the top to explain what the page it
 
 CONTACT PAGE (vicky)
-1. make mobile friendly (currently: no space between the box and navbar: make a white space)
+1. ~~make mobile friendly (currently: no space between the box and navbar: make a white space)~~
 
 PHILOSOPHY PAGE (vicky)
 1. make mobile friendly: header cannot be seen in mobile
