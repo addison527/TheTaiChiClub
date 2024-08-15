@@ -29,7 +29,7 @@ PHILOSOPHY PAGE (vicky)
 1. make mobile friendly: header cannot be seen in mobile
 
 MERCH PAGE (vicky)
-1. in MOBILE have margin/padding at the top so there is white space between the yin and yang box and navbar
+1. ~~in MOBILE have margin/padding at the top so there is white space between the yin and yang box and navbar~~
 
 ALL DOUBLE CHECK (addison)
 1. make sure all the pages CAN BE ACCESSIBLE IN MOBILE!!
