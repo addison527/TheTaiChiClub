@@ -5,7 +5,7 @@ NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY) (addison & vicky)
                 submenu = 'Informatio'n drop down menu with demo, schedule, follow along
 2. ~~IN MOBILE When click on the ☰ button it should open and when you no longer hover over the button or the menu, it should close. Currently it only closes if you click it again.~~ (DONE --> Vicky)
 
-3. IN MOBILE the submenus of the menu should also open to the LEFT (better visibility) in mobile not to the right, currently its out of frame/on top of the menu when I open, and should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile.
+3. ~~IN MOBILE the submenus of the menu should also open to the LEFT (better visibility) in mobile not to the right, currently its out of frame/on top of the menu when I open, and should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile.~~ (DONE --> Vicky)
 
 4. ~~IN MOBILE when hovering over the submenu options, it should change to the dark blue. In desktop, it works, but doesnt work in mobile.~~ (N/A)
 
