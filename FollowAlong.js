@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
+import VideoItem from '../VideoItem';
 
 function FollowAlong({ videoSrc1, videoSrc2, name1, description1, name2, description2 }) {
   return (
@@ -13,128 +14,72 @@ function FollowAlong({ videoSrc1, videoSrc2, name1, description1, name2, descrip
       padding-top="20px"
       minHeight="100vh"
       paddingTop= "100px"
-    >
-      <h1 style={{ textAlign: 'center', width: '100%', paddingLeft: '40px' }}>Follow Along</h1>
+    > 
+      <Text>
+        <h1 style={{ textAlign: 'center', width: '100%', paddingLeft: '40px' }}>Follow Along</h1>
+        <p>10 minute follow-along videos have been made available for Movement 1-18 of the 24 Movements Taijiquan. Additional videos will be made available at a later time.</p>
+      </Text>
 
-      {/* Grid Container for Videos */}
-      <Box
-        width="95%"
-        display="grid"
-        gridTemplateColumns="repeat(3, 1fr)" // Creates three equal columns
-        gap="20px" // Adds space between columns
-        justifyContent="center"
-        alignItems="center"
-        paddingBottom= "50px"
-        paddingTop= "15px"
-        overflow="hidden"
-      >
-        {/* First Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
+      <Box className = "videoItemGrid__container"width="95%" display="grid" gridTemplateColumns="repeat(3, 1fr)" /* Creates three equal columns*/ gap="20px" /*Adds space between columns*/
+        justifyContent="center" alignItems="center" paddingBottom= "50px" paddingTop= "15px"overflow="hidden">
+        <ul>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
           </Box>
-        </Box>
-
-        {/* Second Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
           </Box>
-        </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+        </ul>
+        <ul>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+        </ul>
+        <ul>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+        </ul>
+        <ul>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+          <Box >
+            <VideoItem videoId = "c61Z1OILBgM&t=393s" width = "450px" height = "300px"/>
+          </Box>
+        </ul>
         
-        {/* Third Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Fourth Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Fifth Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Sixth Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Seventh Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Eighth Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
-
-        {/* Ninth Video Box */}
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" backgroundColor= "#95a2bc" borderRadius= "10px" paddingTop="20px">
-          <video width="450px" height="300px" controls >
-            <source src={videoSrc1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Box className="demo_vid_info" textAlign="center" mt="5px">
-            <h2>Title</h2>
-            <p>Description</p>
-          </Box>
-        </Box>
+         
       </Box>
     </Box>
   );
