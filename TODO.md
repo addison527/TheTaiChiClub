@@ -7,7 +7,7 @@ NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY) (addison & vicky)
 
 3. IN MOBILE the submenus of the menu should also open to the LEFT (better visibility) in mobile not to the right, currently its out of frame/on top of the menu when I open, and should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile.
 
-4. IN MOBILE when hovering over the submenu options, it should change to the dark blue. In desktop, it works, but doesnt work in mobile. 
+4. ~~IN MOBILE when hovering over the submenu options, it should change to the dark blue. In desktop, it works, but doesnt work in mobile.~~ (N/A)
 
 5. When no longer hovering over a submenu, it should close. Currently it stays open.
 
