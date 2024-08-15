@@ -359,132 +359,133 @@ const Navbar = () => {
             </HStack>
           </nav>
           <nav>
-            {isMobile ? (
-              <>
-                <button
-                  style={{
-                    padding: '8px',
-                    color: '#ebeff3',
-                    background: 'none',
-                    border: '1px solid',
-                    borderRadius: '3px',
-                    cursor: 'pointer',
-                    backgroundColor: hoveredLink === 'button' ? '#6e86bb' : 'transparent',
-                  }}
-                  onClick={toggleMenu}
-                  onMouseOver={() => handleMouseOver('button')}
+          {isMobile ? (
+            <>
+              <button
+                style={{
+                  padding: '8px',
+                  color: '#ebeff3',
+                  background: 'none',
+                  border: '1px solid',
+                  borderRadius: '3px',
+                  cursor: 'pointer',
+                  backgroundColor: hoveredLink === 'button' ? '#6e86bb' : 'transparent',
+                }}
+                onClick={toggleMenu}
+                onMouseOver={() => handleMouseOver('button')}
+                onMouseOut={handleMouseOut}
+              >
+                ☰
+              </button>
+              {isMenuOpen && (
+                <VStack
+                  spacing={4}
+                  alignItems="center"
+                  onMouseOver={() => setIsMenuOpen(true)}
                   onMouseOut={handleMouseOut}
+                  style={{
+                    position: 'absolute',
+                    top: '100%',
+                    right: 0,
+                    backgroundColor: '#fff',
+                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+                    padding: '10px',
+                    borderRadius: '4px',
+                    width: '150px',
+                    fontFamily: 'Times New Roman'
+                  }}
                 >
-                  ☰
-                </button>
-                {isMenuOpen && (
-                  <VStack
-                    spacing={4}
-                    alignItems="center"
-                    onMouseOver={() => setIsMenuOpen(true)}
-                    onMouseOut={handleMouseOut}
-                    style={{
-                      position: 'absolute',
-                      top: '100%',
-                      right: 0,
-                      backgroundColor: '#fff',
-                      boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-                      padding: '10px',
-                      borderRadius: '4px',
-                      width: '150px',
-                      fontFamily: 'Times New Roman'
-                    }}
-                  >
-                    {menuData.map((menu, index) => (
-                      <div key={index} style={{ position: 'relative', width: '150px' }}>
-                        {menu.url ? (
-                          <Link
-                            to={menu.url}
-                            onMouseOver={() => handleMouseOver(menu.title)}
-                            onMouseOut={handleMouseOut}
+                  {menuData.map((menu, index) => (
+                    <div key={index} style={{ position: 'relative', width: '150px' }}>
+                      {menu.url ? (
+                        <Link
+                          to={menu.url}
+                          onMouseOver={() => handleMouseOver(menu.title)}
+                          onMouseOut={handleMouseOut}
+                          style={{
+                            color: hoveredLink === menu.title ? '#0D3759' : '#95a2bc',
+                            textDecoration: 'none',
+                            padding: '8px 0',
+                            borderBottom: '1px solid #0D3759',
+                            width: '100%',
+                            textAlign: 'center',
+                          }}
+                        >
+                          {menu.title}
+                        </Link>
+                      ) : (
+                        <div
+                          onMouseOver={() => handleMouseOver(menu.title)}
+                          onMouseOut={handleMouseOut}
+                          style={{ width: '100%' }}
+                        >
+                          <button
+                            onClick={() => {
+                              if (menu.title === 'About') {
+                                toggleAboutMenu();
+                              } else {
+                                toggleInfoMenu();
+                              }
+                            }}
                             style={{
                               color: hoveredLink === menu.title ? '#0D3759' : '#95a2bc',
+                              background: 'none',
+                              border: 'none',
+                              cursor: 'pointer',
                               textDecoration: 'none',
-                              padding: '8px 0',
-                              borderBottom: '1px solid #0D3759',
+                              fontSize: '16px',
+                              fontFamily: 'Times New Roman',
                               width: '100%',
                               textAlign: 'center',
+                              padding: '8px 0',
+                              borderBottom: '1px solid #0D3759',
                             }}
                           >
                             {menu.title}
-                          </Link>
-                        ) : (
-                          <div
-                            onMouseOver={() => handleMouseOver(menu.title)}
-                            onMouseOut={handleMouseOut}
-                            style={{ width: '100%' }}
-                          >
-                            <button
-                              onClick={() => {
-                                if (menu.title === 'About') {
-                                  toggleAboutMenu();
-                                } else {
-                                  toggleInfoMenu();
-                                }
-                              }}
+                          </button>
+                          {menu.submenu && (menu.title === 'About' ? isAboutMenuOpen : isInfoMenuOpen) && (
+                            <VStack
+                              spacing={2}
                               style={{
-                                color: hoveredLink === menu.title ? '#0D3759' : '#95a2bc',
-                                background: 'none',
-                                border: 'none',
-                                cursor: 'pointer',
-                                textDecoration: 'none',
-                                fontSize: '16px',
-                                fontFamily: 'Times New Roman',
-                                width: '100%',
-                                textAlign: 'center',
-                                padding: '8px 0',
-                                borderBottom: '1px solid #0D3759',
+                                position: 'absolute',
+                                top: 0,
+                                right: '100%', // Open to the left
+                                backgroundColor: '#fff',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+                                padding: '10px',
+                                borderRadius: '4px',
+                                width: '150px',
+                                zIndex: 1100, // Ensure it appears above other elements
                               }}
                             >
-                              {menu.title}
-                            </button>
-                            {menu.submenu && (menu.title === 'About' ? isAboutMenuOpen : isInfoMenuOpen) && (
-                              <VStack
-                                spacing={2}
-                                style={{
-                                  position: 'absolute',
-                                  top: '100%',
-                                  left: 0,
-                                  backgroundColor: '#fff',
-                                  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-                                  padding: '10px',
-                                  borderRadius: '4px',
-                                  width: '150px',
-                                }}
-                              >
-                                {menu.submenu.map((item, i) => (
-                                  <Link
-                                    key={i}
-                                    to={item.url}
-                                    onMouseOver={() => handleMouseOver(item.title)}
-                                    onMouseOut={handleMouseOut}
-                                    style={{
-                                      color: hoveredLink === item.title ? '#0D3759' : '#95a2bc',
-                                      textDecoration: 'none',
-                                      padding: '8px 0',
-                                      borderBottom: '1px solid #0D3759',
-                                      width: '100%',
-                                      textAlign: 'center',
-                                    }}
-                                  >
-                                    {item.title}
-                                  </Link>
-                                ))}
-                              </VStack>
-                            )}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </VStack>
-                )}
-              </>
-            ) : (
+                              {menu.submenu.map((item, i) => (
+                                <Link
+                                  key={i}
+                                  to={item.url}
+                                  onMouseOver={() => handleMouseOver(item.title)}
+                                  onMouseOut={handleMouseOut}
+                                  style={{
+                                    color: hoveredLink === item.title ? '#0D3759' : '#95a2bc',
+                                    textDecoration: 'none',
+                                    padding: '8px 0',
+                                    borderBottom: '1px solid #0D3759',
+                                    width: '100%',
+                                    textAlign: 'center',
+                                  }}
+                                >
+                                  {item.title}
+                                </Link>
+                              ))}
+                            </VStack>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </VStack>
+              )}
+            </>
+          ) : ( // Desktop Version below
               <HStack spacing={20} style={{ fontSize: '18px', fontFamily: 'Times New Roman' }}>
                 <a
                   href="/"
@@ -632,4 +633,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
