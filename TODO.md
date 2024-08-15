@@ -1,13 +1,9 @@
-NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY) (addison & vicky)
-1. IN MOBILE: when hovering over anywhere but the submenu (info and about submenus), the submenu should close
-    WORD CLARITY: menu = home, about, info, contact
-                submenu = 'About' drop down menu with about merch philosophy
-                submenu = 'Informatio'n drop down menu with demo, schedule, follow along
-2. ~~IN MOBILE When click on the ☰ button it should open and when you no longer hover over the button or the menu, it should close. Currently it only closes if you click it again.~~ (DONE --> Vicky)
+NAVBAR SECTION:  (MOST IMPORTANT:  PLS LOOK AT THIS VICKY)
+1. IN MOBILE: the submenus of the menu should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile. when hovering over anywhere but the submenu (info and about submenus), the submenu should close
+    
+2. Last time I had you remove the navbar if not hovering. We have to change this function so that when user click on the any of the menu options/submenu options of ☰ button it should close ONLY (not when mouse is no longer hovering) after redirecting you to the correct link. Currently the menu stays open. and should NOT dissapear when no longer hovering
 
-3. ~~IN MOBILE the submenus of the menu should also open to the LEFT (better visibility) in mobile not to the right, currently its out of frame/on top of the menu when I open, and should also automatically close when the mouse stops hovering over it. also I think the z index is too low for the submenus in mobile.~~ (DONE --> Vicky)
-
-4. ~~IN MOBILE when hovering over the submenu options, it should change to the dark blue. In desktop, it works, but doesnt work in mobile.~~ (N/A)
+4. IN MOBILE when clicking on the submenu options, it should change to the dark blue. make an {onClick function}
 
 5. When no longer hovering over a submenu, it should close. Currently it stays open.
 
@@ -18,28 +14,29 @@ HEROSECTION (addison)
 1. clean it
 2. insert picture for the hero section
 
-CARDS PAGE (addison & vicky) | located inside the home page
+CARDS PAGE (vicky) (inside the home page)
 1. when clicking on any of the cards, it should take you to the top of the linked page. currently it takes us to the middle/bottom.
 
-DEMO + FOLLOW ALONG PAGE (Vicky)
+DEMO + FOLLOW ALONG PAGE (addison) **im linking all the videos right now and making it dynamic**
 1. fix mobile view (doesnt wrap to fit the screen) and make dynamic sizing for mobile and smaller applications like ipad
 2. link the videos + their descriptions
 3. make a small <p> text box at the top to explain what the page it
 
-CONTACT PAGE (addison)
+CONTACT PAGE (vicky)
 1. make mobile friendly (currently: no space between the box and navbar: make a white space)
 
-PHILOSOPHY PAGE (addison)
+PHILOSOPHY PAGE (vicky)
 1. make mobile friendly: header cannot be seen in mobile
 
-MERCH PAGE (addison)
+MERCH PAGE (vicky)
 1. in MOBILE have margin/padding at the top so there is white space between the yin and yang box and navbar
 
-ALL (addison and vicky)
+ALL DOUBLE CHECK (addison)
 1. make sure all the pages CAN BE ACCESSIBLE IN MOBILE!!
     CHECK THIS AFTER COMPLETING ALL PAGES
 2. and when the content is short, make sure footer can be seen
--------------
+
+-----------
 PUBLISHING 
 1. publish website using git (possible sizing issue)
 
