@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function CardItem(props) {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+  };
+
   return (
     <>
       <li className='cards__item'>
